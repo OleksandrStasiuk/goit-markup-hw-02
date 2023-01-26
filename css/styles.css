@@ -1,6 +1,16 @@
 :root {
   --primery-text-color: rgba(67, 68, 85, 1);
   --title-text-color: rgba(46, 47, 66, 1);
+  --active-color: #404bbf;
+  --logo-color: #4d5ae5;
+  --hover-color: #404bbf;
+  --main-btn-color: #4d5ae5;
+  --background-main-btn-color: #f4f4fd;
+  --background-main-btn-color: #f4f4fd;
+  --background-second-btn-color: #4d5ae5;
+  --hero-color: #ffffff;
+  --background-team-color: #f4f4fd;
+  --hover-main-btn-color: #ffffff;
 }
 
 body {
@@ -40,10 +50,27 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #4d5ae5;
+  color: var(--logo-color);
 }
 .logo-text {
   color: var(--title-text-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current {
+  color: var(--active-color);
 }
 /*------------------- HEADER----------------- */
 .header {
@@ -68,7 +95,7 @@ body {
 }
 
 .header-link:is(:hover, :focus) {
-  color: #404bbf;
+  color: var(--hover-color);
 }
 .address {
 }
@@ -84,14 +111,11 @@ body {
   color: var(--primery-text-color);
 }
 .address-mail:is(:hover, :focus) {
-  color: #404bbf;
+  color: var(--hover-color);
 }
 .address-tel {
   color: var(--primery-text-color);
 }
-/* .address-tel:is(:hover, :focus) {
-  color: #404bbf;
-} */
 
 /*------------------- HERO----------------- */
 .hero {
@@ -103,14 +127,14 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--hero-color);
 }
 .hero-btn {
-  color: #ffffff;
-  background: #4d5ae5;
+  color: var(--hero-color);
+  background: var(--background-second-btn-color);
 }
 .hero-btn:is(:hover, :focus) {
-  background: #404bbf;
+  background: var(--hover-color);
 }
 
 /*------------------- ABOUT----------------- */
@@ -140,6 +164,7 @@ body {
 }
 /*------------------- TEAM----------------- */
 .team {
+  background: var(--background-team-color);
 }
 .team-title {
 }
@@ -163,7 +188,7 @@ body {
 }
 .footer-text {
 }
-/*------------------- EXAMPLES----------------- */
+/*------------------- EXAMPLES and GALERY----------------- */
 .examples {
 }
 .examples-list {
@@ -172,15 +197,12 @@ body {
 .examples-item {
 }
 .examples-btn {
-  color: #4d5ae5;
-  background: #f4f4fd;
+  color: var(--main-btn-color);
+  background: var(--background-main-btn-color);
 }
 .examples-btn:is(:hover, :focus) {
-  color: #ffffff;
-  background: #404bbf;
-}
-/*------------------- GALERY----------------- */
-.galery {
+  color: var(--hover-main-btn-color);
+  background: var(--hover-color);
 }
 .galery-list {
 }
