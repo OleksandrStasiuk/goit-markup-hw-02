@@ -3,14 +3,15 @@
   --title-text-color: rgba(46, 47, 66, 1);
   --active-color: #404bbf;
   --logo-color: #4d5ae5;
+  --logo-text-color: #f4f4fd;
   --hover-color: #404bbf;
   --main-btn-color: #4d5ae5;
-  --background-main-btn-color: #f4f4fd;
   --background-main-btn-color: #f4f4fd;
   --background-second-btn-color: #4d5ae5;
   --hero-color: #ffffff;
   --background-team-color: #f4f4fd;
   --hover-main-btn-color: #ffffff;
+  --footer-text-color: #e7e9fc;
 }
 
 body {
@@ -182,12 +183,15 @@ body {
 }
 /*------------------- FOOTER----------------- */
 .footer {
+  background-color: rgba(46, 47, 66, 1);
 }
 .footer-logo {
 }
 .footer-logo-text {
+  color: var(--logo-text-color);
 }
 .footer-text {
+  color: var(--footer-text-color);
 }
 /*------------------- EXAMPLES and GALERY----------------- */
 .examples {
